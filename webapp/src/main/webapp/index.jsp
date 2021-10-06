@@ -1,2 +1,6 @@
-<h1> HWelcome  Ragheb to second Test Simple DevOps Project  </h1>
-<h2> Deploying on a kubernetes using ansible for Ragheb Demo Project </h2>
+<h1> Welcome, I am Ragheb Ben Hamouda  </h1>
+<h2> This is my Summer Internship Project</h2>
+
+<h2> Title: Deploying on a Kubernetes Cluster using Ansible</h2>
+
+<h2> This is the <b>first </b> Test </h2>
