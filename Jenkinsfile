@@ -9,11 +9,11 @@ tools {
 
       stage ('Checkout SCM'){
         steps {
-          checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/raghebbenhamouda/hello-world.git']]])
+          checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/raghebbenhamouda/Summer-Intership-Porject.git']]])
         }
       }
 	  
-	  stage ('Build')  {
+	  stage ('Java Application Build ')  {
 	      steps {
           
             sh "mvn clean install "
@@ -21,7 +21,7 @@ tools {
         }
 	  }
 
-	  stage ('copy artifact to ansible')  {
+	  stage ('Copy Artifact to Ansible')  {
 	      steps {
           
            sshagent(['deployer_user']) {
